@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+	padding: 15px 20px;
+	min-height: 99%;
+	width: 100%;
+	min-width: 550px;
+	color: #4d4c4c;
+	background: #131313;
+	font-family: cursor, monospace;
+	overflow-x: hidden;
+}
+
+::selection {
+	color: #222629;
+	background-color: #19f424;
+}
+::-moz-selection {
+	color: #222629;
+	background-color: #6b6e70;
+}
+
+textarea {
+	left: -1000px;
+	position: absolute;
+}
+
+b {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.cursor {
+	font-size: 12px;
+	color: #660000;
+	background-color: #b30303;
+	position: relative;
+	opacity: 1;
+	height: 1.5em;
+	width: 10px;
+	max-width: 10px;
+	transform: translateY(4px);
+	overflow: hidden;
+	text-indent: -5px;
+	display: inline-block;
+	text-decoration: blink;
+	animation: blinker 1s linear infinite;
+}
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+
+#command {
+	cursor: text;
+	height: 50px;
+	color: #fff;
+}
+
+#liner {
+	line-height: 1.3em;
+	margin-top: -2px;
+	animation: show 0.5s ease forwards;
+	animation-delay: 1.2s;
+	opacity: 0;
+}
+#liner::before {
+	color: #0deaaf;
+	content: 'visitor@R3D1AM:~$';
+}
+
+@keyframes show {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+p {
+	display: block;
+	line-height: 1.3em;
+	margin: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0;
+	letter-spacing: 0.05em;
+	animation: typing 0.5s steps(30, end);
+}
+.no-animation {
+	animation: typing 0 steps(30, end);
+}
+.margin {
+	margin-left: 20px;
+}
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+.index {
+	color: #dcdccc;
+}
+.color2 {
+	color: #6b6e70;
+}
+.command {
+	color: #660000;
+	text-shadow: 0 0 5px #b30303;
+}
+.error {
+	color: #6b6e70;
+}
+.white {
+	color: #fff;
+}
+.inherit,
+a {
+	color: #6b6e70;
+}
+a {
+	text-decoration: inherit;
+}
+a:hover {
+	background: #6b0202;
+	color: #bcbaba;
+}
+a:focus {
+	outline: 0;
+}
+/* a:testing {
+	colour1: #660000;
+	colour2: #b30303;
+	colour3: #222629;
+	colour4: #474B4F;
+	colour5: #6B6E70;
+
+} */
+*/ @media only screen and (min-width: 601px) {
+	body {
+		padding: 15px 20px;
+	}
+
+	#command {
+		height: 50px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		padding: 10px;
+	}
+
+	#command {
+		height: 40px;
+	}
+}
