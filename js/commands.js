@@ -1,4 +1,4 @@
-var mastadon = 'https://infosec.exchange/@R3D1AM';
+
 var linkedin = 'https://www.linkedin.com/in/mdrurb/';
 var github = 'https://github.com/R3D1AM';
 var research = 'https://www.researchgate.net/profile/Maider-D-U';
@@ -9,8 +9,7 @@ whois = [
 	'<br>',
 	'Cypherpunk.',
 	'Malware Alchemist.',
-	'Cryptography Ninja.',
-	'Lockpick Extraordinaire.',
+	'I break stuff, Sometimes I make stuff',
 
 	'<br>',
 	'Did you just take both pills?',
@@ -28,10 +27,7 @@ blog = [
 
 social = [
 	'<br>',
-	'mastadon       <a href="' +
-		mastadon +
-		'" target="_blank">mastadon/@R3D1AM' +
-		'</a>',
+	
 	'linkedin       <a href="' +
 		linkedin +
 		'" target="_blank">linkedin/@mdrurb' +
@@ -40,9 +36,7 @@ social = [
 		github +
 		'" target="_blank">github/@R3D1AM' +
 		'</a>',
-	'<br>',
-	'Not really a social media person, I barely use any of these.',
-	'<br>',
+	',
 ];
 
 projects = [
