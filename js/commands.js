@@ -11,9 +11,7 @@ whois = [
 	'Malware Alchemist.',
 	'I break stuff, Sometimes I make stuff',
 
-	'<br>',
-	'Did you just take both pills?',
-	'<br>',
+	
 ];
 
 blog = [
